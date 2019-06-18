@@ -1,0 +1,88 @@
+ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+.calendar {
+    margin: 100px auto 0;
+    width: 40%;
+    box-shadow: 0 0 15px #ccc;
+}
+.calendar__panel {
+    text-align: center;
+}
+.calendar__panel label {
+}
+.calendar__days {
+    font-size: 0;
+    padding: 10px;
+}
+.day:nth-child(7n+7), .day:last-child { margin-right: 0; }
+.day {
+    margin: 0 2% 2% 0;
+    vertical-align: top;
+    display: inline-block;
+    width: 12.5%;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+    line-height: 30px;
+    border: 1px solid #999;
+    box-sizing: border-box;
+    transition: .5s;
+    cursor: pointer;
+}
+.day:hover {
+    border-color: #bbb;
+    box-shadow: 0 0 5px #aaa;
+}
+.day__title {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.wr-modal {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background-color: #eeeeee;
+}
+.modal__text {
+    resize: none;
+    width: 100%;
+    height: 400px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background-color: #eeeeee;
+    transition: .5s;
+}
+.modal__text:focus {
+    background-color: #ffffff;
+}
+.modal__panel {
+    margin: 10px 0;
+    text-align: center;
+}
+.modal__panel button {
+    font-size: 25px;
+}
+.js-month-prev, .js-month-next {
+    background-color: black;
+    color: white;
+}

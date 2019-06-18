@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="calendar">
+        <div class="calendar__panel js-calendar__panel">
+            <label class="js-month-prev">назад</label>
+            <label class="js-month-cur"></label>
+            <label class="js-month-next">вперёд</label>
+        </div>
+        <div class="calendar__days js-calendar"></div>
+    </div>
+    <div class="wr-modal js-modal">
+        <div class="modal">
+            <textarea class="modal__text js-tasks"></textarea>
+            <div class="modal__panel">
+                <button class="js-save">save</button>
+                <button class="js-cancel">cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
